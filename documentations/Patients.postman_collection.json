@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "f6708030-344e-485e-8870-336e9d30b197",
+		"name": "Patients",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25322409"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4000/api/patients/get-patients",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/patients/get-patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"patients",
+						"get-patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/api/patients/create-patient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Sarah\",\r\n    \"last_name\": \"Clark\",\r\n    \"date_of_birth\": \"1992-09-14\",\r\n    \"gender\": \"F\",\r\n    \"phone_number\": \"555-999-0000\",\r\n    \"email\": \"sarah.clark@example.com\",\r\n    \"address\": \"789 Elm Avenue\",\r\n    \"city\": \"Hilltown\",\r\n    \"state\": \"Anotherstate\",\r\n    \"zipcode\": \"56789\",\r\n    \"country\": \"USA\",\r\n    \"practioner_id\": 10\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/patients/create-patient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"patients",
+						"create-patient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/api/patients/get-patient/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/patients/get-patient/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"patients",
+						"get-patient",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/api/patients /update-patient/",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Jonny\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/patients/update-patient/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"patients",
+						"update-patient",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/api/patients//delete-patient/10",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/patients//delete-patient/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"patients",
+						"",
+						"delete-patient",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
